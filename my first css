@@ -344,7 +344,11 @@ body {
 /* Hero Section */
 .hero-section {
   min-height: 100vh;
-  background: linear-gradient(135deg, #2563ebe6, rgba(30, 64, 175, 0.9)),
+  background: linear-gradient(
+      135deg,
+      rgba(37, 99, 235, 0.9),
+      rgba(30, 64, 175, 0.9)
+    ),
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23334155" width="1200" height="800"/><g fill="%23475569"><circle cx="200" cy="150" r="20"/><circle cx="800" cy="250" r="15"/><circle cx="1000" cy="100" r="25"/><circle cx="400" cy="400" r="18"/><circle cx="600" cy="600" r="22"/></g></svg>');
   background-size: cover;
   background-position: center;
@@ -353,7 +357,6 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 10rem 0;
 }
 
 .hero-content {
@@ -513,7 +516,6 @@ body {
 /* Quiz Container */
 .quiz-container {
   margin: 3rem 0;
-  max-width: 600px;
 }
 
 .quiz-card {

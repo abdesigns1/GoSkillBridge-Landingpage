@@ -1,409 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillBridge - Your Future is Built by Hand</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#home"> GoSkill<span>Bridge</span> </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <!-- <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#how-it-works">How It Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#signup">Get Started</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-
-          <div class="nav-cta">
-            <a href="#signup" class="btn btn-nav-primary">Join Waitlist</a>
-            <a href="#signup" class="btn btn-nav-outline">For Employers</a>
-          </div>
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                Go<span>SkillBridge</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">For Apprentices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#employers">For Employers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#homeowners">For Homeowners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <a href="#signup" class="btn btn-nav-primary">Join Waiting List</a>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
 
     <!-- Hero Section -->
-    <section
-      class="hero-section"
-      style="
-        background: url('https://www.europeansprings.com/wp-content/uploads/2022/07/apprentices-1.jpg')
-          center center/cover no-repeat;
-        min-height: 100vh;
-        position: relative;
-      "
-    >
-      <div
-        style="
-          position: absolute;
-          inset: 0;
-          background: rgba(10, 20, 40, 0.55);
-          z-index: 1;
-        "
-      ></div>
-      <div class="container" style="position: relative; z-index: 2">
-        <div class="row">
-          <div class="col-lg-8 hero-content">
-            <h1 class="hero-title animate-on-scroll">
-              Your Future is Built by Hand.
-              <span style="color: var(--accent-orange)">Prove It.</span>
-            </h1>
-            <p class="hero-subtitle animate-on-scroll">
-              The UK's first platform designed for skilled trade
-              apprenticeships. We connect practical talent with great local
-              employers, replacing the CV with a portfolio of real work.
+    <section class="hero-section d-flex align-items-center min-vh-100 position-relative" id="home" style="background: url('https://acecollegecanada.com/wp-content/uploads/2020/01/parents-dont-know-the-value-of-apprenticeships-leading-to-a-growing-skills-shortage.jpe') center center/cover no-repeat;">
+        <div style="position: absolute; inset: 0; background: #2564ebc0; z-index: 1;"></div>
+        <div style="position: relative; z-index: 2;">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8 col-md-10 hero-content">
+                <h1 class="hero-title animate-on-scroll">Your Career is Built by Hand. <span style="color: var(--accent-orange);">Find Your Path.</span></h1>
+                <p class="hero-subtitle animate-on-scroll">Take our 2-minute <strong>Trade-Ready Assessment</strong> to discover your practical strengths and start your journey from aspiring apprentice to a trusted, professional tradesperson.</p>
+                
+                <!-- Interactive Quiz Element -->
+                <div class="quiz-container animate-on-scroll mx-auto">
+                    <div class="quiz-card">
+                        <h4>What is your first instinct when faced with a complex physical problem?</h4>
+                        <div class="quiz-options text-left">
+                            <label class="quiz-option">
+                                <input type="radio" name="quiz1" value="instructions">
+                                <span class="checkmark"></span>
+                                Read the instructions carefully first.
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="quiz1" value="visual">
+                                <span class="checkmark"></span>
+                                Look at all the parts to figure it out visually.
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="quiz1" value="collaborate">
+                                <span class="checkmark"></span>
+                                Ask someone to help you work on it together.
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="quiz1" value="perfect">
+                                <span class="checkmark"></span>
+                                Focus on getting every detail perfect.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons animate-on-scroll mt-4">
+                    <a href="#assessment" class="btn btn-primary btn-lg">START ASSESSMENT & UNLOCK YOUR POTENTIAL</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Problem Section - Replaced with Journey Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">We're With You, <span style="color: var(--accent-orange);">Every Step of the Way.</span></h2>
+            <p class="text-center lead mb-5 animate-on-scroll" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                GoSkillBridge is the UK's first platform designed to guide you through your entire career in the skilled trades.
             </p>
-            <div class="cta-buttons animate-on-scroll">
-              <a href="#signup" class="btn btn-primary"
-                >I'm Looking for an Apprenticeship</a
-              >
-              <a href="#signup" class="btn btn-outline-light"
-                >I'm Hiring an Apprentice</a
-              >
+            
+            <div class="journey-path">
+                <div class="journey-step animate-on-scroll">
+                    <div class="journey-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h4>1. DISCOVER</h4>
+                    <h5>Find Your Path</h5>
+                    <p>Start with our <strong>Trade-Ready Assessment</strong> to find the right path. We help you understand your natural skills and focus your ambition on trades where you'll thrive.</p>
+                </div>
+                <div class="journey-step animate-on-scroll">
+                    <div class="journey-icon">
+                        <i class="fas fa-toolbox"></i>
+                    </div>
+                    <h4>2. DEVELOP</h4>
+                    <h5>Build Skills</h5>
+                    <p>Build a powerful <strong>Visual Portfolio</strong> to prove your skills. Connect with <strong>"SkillBridge Verified™"</strong> employers for top-quality apprenticeships.</p>
+                </div>
+                <div class="journey-step animate-on-scroll">
+                    <div class="journey-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h4>3. QUALIFY</h4>
+                    <h5>Get Certified</h5>
+                    <p>Complete your apprenticeship and gain your formal qualifications. With proven experience and credentials, you're ready for the next level.</p>
+                </div>
+                <div class="journey-step animate-on-scroll">
+                    <div class="journey-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>4. GO PRO</h4>
+                    <h5>Launch Career</h5>
+                    <p>Launch your career on the <strong>GoSkillBridge Pro</strong> marketplace. Get hired by local homeowners with our <strong>SkillBridge SecurePay™</strong> system.</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Problem Section -->
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title animate-on-scroll">
-          A Paper CV Can't Show a Perfect Weld.
-        </h2>
-        <div class="row">
-          <div class="col-lg-4 mb-4">
-            <div class="problem-card animate-on-scroll">
-              <div class="problem-icon">
-                <i class="fas fa-file-contract"></i>
-              </div>
-              <h4>For Apprentices</h4>
-              <p>
-                Your practical skills get lost in a text-based CV. You're judged
-                on grades, not talent.
-              </p>
+    <!-- Services Section - Replaced with Apprentice Section -->
+    <section class="section services-section" id="apprentices">
+        <div class="container services-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="text-white animate-on-scroll" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 2rem;">Ditch the CV. <span style="color: var(--accent-orange);">Show Your Work.</span></h2>
+                    <p class="lead animate-on-scroll" style="color: rgba(255, 255, 255, 0.9); margin-bottom: 3rem;">
+                        A traditional resume can't show your passion or your practical talent. A GoSkillBridge portfolio can.
+                    </p>
+                    
+                    <ul class="apprentice-features animate-on-scroll">
+                        <li>
+                            <div>
+                                <div class="feature-title" style="color: white;">Showcase Your True Skills</div>
+                                <div class="feature-description" style="color: rgba(255, 255, 255, 0.8);">Easily upload photos and descriptions of your best work—from school projects to personal hobbies—and create a profile that employers will actually remember.</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="feature-title" style="color: white;">Connect with Quality Employers</div>
+                                <div class="feature-description" style="color: rgba(255, 255, 255, 0.8);">Apply exclusively to <strong>"SkillBridge Verified™"</strong> companies. We vet every employer on our platform to ensure they are committed to your training, safety, and career growth.</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="feature-title" style="color: white;">Get Hired Faster</div>
+                                <div class="feature-description" style="color: rgba(255, 255, 255, 0.8);">Ready for an immediate opportunity? Switch on your <strong>"Hire Me"</strong> status to let the best local companies know you're available now, and let great jobs find you.</div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="animate-on-scroll">
+                        <a href="#signup" class="btn btn-outline-light btn-lg" style="margin-top: 2rem;">CREATE YOUR FREE PORTFOLIO</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-mockup animate-on-scroll">
+                        <div class="hire-badge">
+                            <i class="fas fa-bolt"></i> Available for Hire
+                        </div>
+                        <div class="text-center">
+                            <div style="width: 100px; height: 100px; background: var(--accent-orange); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-hammer text-white" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h4>Visual Portfolio</h4>
+                            <p class="text-muted">Show your work, not just words</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3 flex-wrap">
+                                <span class="badge bg-primary">Electrical Projects</span>
+                                <span class="badge bg-primary">Safety Certified</span>
+                                <span class="badge bg-primary">Manchester</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="problem-card animate-on-scroll">
-              <div class="problem-icon">
-                <i class="fas fa-search-minus"></i>
-              </div>
-              <h4>For Employers</h4>
-              <p>
-                You waste hours sifting through irrelevant CVs, struggling to
-                spot true potential. Hiring the wrong person is costly.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="problem-card animate-on-scroll">
-              <div class="problem-icon">
-                <i class="fas fa-times-circle"></i>
-              </div>
-              <h4>For Everyone</h4>
-              <p>
-                The apprenticeship system is a maze of confusing websites and
-                complicated paperwork. It's too difficult.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Solution Section -->
-    <section class="section section-alt" id="how-it-works">
-      <div class="container">
-        <h2 class="section-title animate-on-scroll">
-          Find Talent. Manage Training.
-          <span style="color: var(--accent-orange)">Build the Future.</span>
-        </h2>
+    <!-- Solution Section - Replaced with Employers & Homeowners -->
+    <section class="section section-alt" id="employers">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Whether You're Hiring an Apprentice or a Pro, <span style="color: var(--accent-orange);">We Guarantee Trust.</span></h2>
+            <p class="text-center lead mb-5 animate-on-scroll" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                GoSkillBridge is the single source for vetted, high-quality talent in the skilled trades.
+            </p>
 
-        <div class="toggle-buttons animate-on-scroll">
-          <div class="toggle-btn active" onclick="showSolution('apprentices')">
-            For Apprentices
-          </div>
-          <div class="toggle-btn" onclick="showSolution('employers')">
-            For Employers
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="solution-content active" id="apprentices-content">
-              <div class="solution-step animate-on-scroll">
-                <div class="step-number">1</div>
-                <h4>Build Your Portfolio</h4>
-                <p>
-                  Upload photos and videos of your projects to create a visual
-                  profile that proves your skills.
-                </p>
-              </div>
-              <div class="solution-step animate-on-scroll">
-                <div class="step-number">2</div>
-                <h4>Get Matched</h4>
-                <p>
-                  Our platform connects you with local employers who are looking
-                  for your specific talents.
-                </p>
-              </div>
-              <div class="solution-step animate-on-scroll">
-                <div class="step-number">3</div>
-                <h4>Launch Your Career</h4>
-                <p>
-                  Apply to the best apprenticeships with a profile that truly
-                  stands out.
-                </p>
-              </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="dual-column employer-column animate-on-scroll">
+                        <h3 class="column-title">For Employers: Hire an Apprentice</h3>
+                        <p style="color: var(--text-gray); margin-bottom: 25px;">
+                            Stop sifting through irrelevant CVs and start seeing real talent. Our platform is built to de-risk your hiring process and help you build your future workforce with confidence.
+                        </p>
+                        
+                        <ul class="column-features">
+                            <li><strong>Access a Vetted Talent Pool:</strong> Discover motivated, local apprentices with visual proof of their skills.</li>
+                            <li><strong>Hire Smarter:</strong> Use our tools to identify candidates with the right practical aptitude for the job.</li>
+                            <li><strong>Become "SkillBridge Verified™":</strong> Join our trusted community to attract the very best candidates.</li>
+                        </ul>
+                        
+                        <a href="#signup" class="btn btn-outline-primary btn-lg">FIND APPRENTICE TALENT</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" id="homeowners">
+                    <div class="dual-column homeowner-column animate-on-scroll">
+                        <h3 class="column-title">For Homeowners: Hire a Pro</h3>
+                        <p style="color: var(--text-gray); margin-bottom: 25px;">
+                            Need a reliable electrician, plumber, or carpenter? Hire with absolute confidence from our network of qualified, insured, and vetted independent professionals.
+                        </p>
+                        
+                        <ul class="column-features">
+                            <li><strong>Vetted & Verified Pros:</strong> Every Pro on our platform is a qualified graduate of a trusted apprenticeship.</li>
+                            <li><strong>Total Payment Protection:</strong> Your payment is held securely with our <strong>SkillBridge SecurePay™</strong> escrow system and is only released when you confirm the job is complete.</li>
+                            <li><strong>Peace of Mind, Guaranteed:</strong> No more guesswork. Just high-quality work from trusted local experts.</li>
+                        </ul>
+                        
+                        <a href="#signup" class="btn" style="background: #ea580c; color: white; border: none;" onmouseover="this.style.background='#c2410c'" onmouseout="this.style.background='#ea580c'">FIND A LOCAL PRO</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="solution-content" id="employers-content">
-              <div class="solution-step animate-on-scroll">
-                <div class="step-number">1</div>
-                <h4>Discover Talent</h4>
-                <p>
-                  Post your vacancy and search our database of pre-vetted,
-                  practical apprentices with visual portfolios.
-                </p>
-              </div>
-              <div class="solution-step animate-on-scroll">
-                <div class="step-number">2</div>
-                <h4>Hire with Confidence</h4>
-                <p>
-                  Identify the best candidates quickly by seeing their
-                  real-world work, not just their words.
-                </p>
-              </div>
-              <div class="solution-step animate-on-scroll">
-                <div class="step-number">3</div>
-                <h4>Simplify Management</h4>
-                <p>
-                  Use our dashboard to track training, manage compliance, and
-                  make apprenticeship admin easy.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-
+    </section> 
+    
+    
+    
     <!-- CTA Section -->
     <section class="section cta-section" id="signup">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="section-title text-white animate-on-scroll">
-            The Future of Trade Apprenticeships is Coming.
-            <span style="color: var(--accent-orange)">Be First in Line.</span>
-          </h2>
-          <p class="lead animate-on-scroll">
-            Join our exclusive waiting list. We're launching soon in Greater
-            Manchester. Apprentices get first access to jobs. Employers get a
-            free 3-month trial of our premium tools.
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6 mb-4">
-            <div class="signup-form animate-on-scroll">
-              <h3 class="mb-4 text-center">Find Your Apprenticeship</h3>
-              <form>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Full Name"
-                  required
-                />
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Email Address"
-                  required
-                />
-                <select class="form-select">
-                  <option value="">What is your desired trade?</option>
-                  <option value="electrician">Electrician</option>
-                  <option value="plumber">Plumber</option>
-                  <option value="carpenter">Carpenter</option>
-                  <option value="mechanic">Mechanic</option>
-                  <option value="other">Other</option>
-                </select>
-                <button type="submit" class="signup-btn btn-apprentice">
-                  JOIN APPRENTICE LIST
-                </button>
-              </form>
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-white animate-on-scroll">The Future of the Skilled Trades is Here. <span style="color: var(--accent-orange);">Join Us.</span></h2>
+                <p class="lead animate-on-scroll">We are launching soon in Greater Manchester and will be expanding across the UK. Join our waiting list for exclusive early access and founder-member benefits.</p>
             </div>
-          </div>
-          <div class="col-lg-6 mb-4">
-            <div class="signup-form animate-on-scroll">
-              <h3 class="mb-4 text-center">Hire Top Talent</h3>
-              <form>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Company Name"
-                  required
-                />
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Work Email Address"
-                  required
-                />
-                <select class="form-select">
-                  <option value="">What trade do you hire for?</option>
-                  <option value="electrician">Electrician</option>
-                  <option value="plumber">Plumber</option>
-                  <option value="construction">General Construction</option>
-                  <option value="multiple">Multiple Trades</option>
-                  <option value="other">Other</option>
-                </select>
-                <button type="submit" class="signup-btn btn-employer">
-                  JOIN EMPLOYER LIST
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
 
-        <p class="text-center mt-4 opacity-75 animate-on-scroll">
-          <small
-            >We're building a community, not a spam list. We'll only email you
-            with important launch updates.</small
-          >
-        </p>
-      </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="signup-form animate-on-scroll">
+                        <h3 class="mb-4 text-center">I'm an Aspiring Apprentice</h3>
+                        <p class="text-center mb-4" style="color: var(--text-gray); font-size: 0.9rem;">Be the first to build your portfolio and connect with top employers. It's free, forever.</p>
+                        <form>
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                            <select class="form-select">
+                                <option value="">Desired Trade</option>
+                                <option value="electrician">Electrician</option>
+                                <option value="plumber">Plumber</option>
+                                <option value="carpenter">Carpenter</option>
+                                <option value="mechanic">Mechanic</option>
+                                <option value="bricklayer">Bricklayer</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <button type="submit" class="signup-btn btn-apprentice">JOIN THE APPRENTICE LIST</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="signup-form animate-on-scroll">
+                        <h3 class="mb-4 text-center">I'm an Employer Hiring Apprentices</h3>
+                        <p class="text-center mb-4" style="color: var(--text-gray); font-size: 0.9rem;">Get early access and a free 3-month trial of our premium hiring tools.</p>
+                        <form>
+                            <input type="text" class="form-control" placeholder="Company Name" required>
+                            <input type="email" class="form-control" placeholder="Work Email Address" required>
+                            <select class="form-select">
+                                <option value="">Trade You Hire For</option>
+                                <option value="electrician">Electrician</option>
+                                <option value="plumber">Plumber</option>
+                                <option value="construction">General Construction</option>
+                                <option value="multiple">Multiple Trades</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <button type="submit" class="signup-btn btn-employer">JOIN THE EMPLOYER LIST</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="signup-form animate-on-scroll">
+                        <h3 class="mb-4 text-center">I'm a Homeowner Who Wants to Hire a Pro</h3>
+                        <p class="text-center mb-4" style="color: var(--text-gray); font-size: 0.9rem;">Be the first to know when our trusted Pro marketplace launches in your area.</p>
+                        <form>
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                            <input type="text" class="form-control" placeholder="Postcode" required>
+                            <div style="height: 20px;"></div> <!-- Spacer to align with other forms -->
+                            <button type="submit" class="signup-btn" style="background: #ea580c; color: white;">NOTIFY ME AT LAUNCH</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center mt-4 opacity-75 animate-on-scroll">
+                <small>We're building a community, not a spam list. We'll only email you with important launch updates.</small>
+            </p>
+        </div>
     </section>
 
     <!-- Feature Spotlight -->
     <section class="section feature-spotlight">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h2
-              class="animate-on-scroll"
-              style="font-size: 2.5rem; font-weight: 700; margin-bottom: 2rem"
-            >
-              Ready to Work?
-              <span style="color: var(--accent-orange)"
-                >Let a great job find you.</span
-              >
-            </h2>
-            <p class="lead animate-on-scroll">
-              Our unique "Hire Me" feature lets top apprentices signal they are
-              ready for immediate opportunities. For employers, it's the fastest
-              way to find and recruit motivated, available talent for your team.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <div class="feature-mockup animate-on-scroll">
-              <div class="hire-badge">
-                <i class="fas fa-bolt"></i> Available for Hire
-              </div>
-              <div class="text-center">
-                <div
-                  style="
-                    width: 80px;
-                    height: 80px;
-                    background: var(--primary-blue);
-                    border-radius: 50%;
-                    margin: 0 auto 20px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
-                  <i class="fas fa-user text-white" style="font-size: 2rem"></i>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="animate-on-scroll" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 2rem;">Ready to Work? <span style="color: var(--accent-orange);">Let a great job find you.</span></h2>
+                    <p class="lead animate-on-scroll">Our unique "Hire Me" feature lets top apprentices signal they are ready for immediate opportunities. For employers, it's the fastest way to find and recruit motivated, available talent for your team.</p>
                 </div>
-                <h4>Jake Morrison</h4>
-                <p class="text-muted">Electrical Apprentice</p>
-                <div class="d-flex justify-content-center gap-2 mt-3">
-                  <span class="badge bg-primary">Wiring</span>
-                  <span class="badge bg-primary">Safety Certified</span>
-                  <span class="badge bg-primary">Manchester</span>
+                <div class="col-lg-6">
+                    <div class="feature-mockup animate-on-scroll">
+                        <div class="hire-badge">
+                            <i class="fas fa-bolt"></i> Available for Hire
+                        </div>
+                        <div class="text-center">
+                            <div style="width: 80px; height: 80px; background: var(--primary-blue); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-user text-white" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4>Jake Morrison</h4>
+                            <p class="text-muted">Electrical Apprentice</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <span class="badge bg-primary">Wiring</span>
+                                <span class="badge bg-primary">Safety Certified</span>
+                                <span class="badge bg-primary">Manchester</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p>
-          Contact Us:
-          <a href="mailto:admin@goskillbridge.uk">info@goskillbridge.co.uk</a>
-        </p>
-        <p>
-          Follow us on
-          <a
-            href="https://www.linkedin.com/company/goskillbridge"
-            target="_blank"
-            style="margin-right: 12px"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://twitter.com/goskillbridge"
-            target="_blank"
-            style="margin-right: 12px"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="https://www.instagram.com/goskillbridge" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </p>
-        <p>
-          &copy; 2025 goSkillBridge Ltd. All Rights Reserved. | A future-focused
-          company based in the UK.
-        </p>
-      </div>
+    <footer class="footer" id="#">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 style="color: var(--accent-orange); margin-bottom: 1rem;">GoSkillBridge</h4>
+                    <p style="margin-bottom: 2rem;">GoSkillBridge is a complete career platform for the skilled trades, dedicated to building a more trusted, efficient, and prosperous future for apprentices, employers, and homeowners across the UK.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 style="color: white; margin-bottom: 1rem;">Quick Links</h5>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><a href="#about" style="color: rgba(255,255,255,0.8); text-decoration: none;">About Us</a></li>
+                                <li style="margin-bottom: 0.5rem;"><a href="#apprentices" style="color: rgba(255,255,255,0.8); text-decoration: none;">For Apprentices</a></li>
+                                <li style="margin-bottom: 0.5rem;"><a href="#employers" style="color: rgba(255,255,255,0.8); text-decoration: none;">For Employers</a></li>
+                                <li style="margin-bottom: 0.5rem;"><a href="#homeowners" style="color: rgba(255,255,255,0.8); text-decoration: none;">For Pros</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 style="color: white; margin-bottom: 1rem;">Connect</h5>
+                            <div style="margin-bottom: 1rem;">
+                                <a href="#" style="color: var(--accent-orange); font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" style="color: var(--accent-orange); font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <p><a href="mailto:contact@goskillbridge.uk" style="color: var(--accent-orange); text-decoration: none;">Contact Us</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.2); margin: 2rem 0 1rem;">
+            <p style="text-align: center; margin: 0;">&copy; 2024 GoSkillBridge Ltd. All Rights Reserved. | London, UK.</p>
+        </div>
     </footer>
 
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+<script src="script.js"></script>
+
+</body>
 </html>

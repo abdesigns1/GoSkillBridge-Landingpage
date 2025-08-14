@@ -42,19 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
         navLinks.forEach((link) => {
           link.classList.remove("active");
-          // Map section IDs to nav items
-          if (
-            (sectionId === "home" &&
-              link.getAttribute("href").includes("apprentices")) ||
-            (sectionId === "apprentices" &&
-              link.getAttribute("href").includes("apprentices")) ||
-            (sectionId === "employers" &&
-              link.getAttribute("href").includes("employers")) ||
-            (sectionId === "homeowners" &&
-              link.getAttribute("href").includes("homeowners")) ||
-            (sectionId === "about" &&
-              link.getAttribute("href").includes("about"))
-          ) {
+          if (link.getAttribute("href") === `#${sectionId}`) {
             link.classList.add("active");
           }
         });
