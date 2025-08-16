@@ -8,6 +8,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles.css">
+
+<!-- Email ID -->
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    emailjs.init("vmwaieAuQpuK5c___"); // Ensure this matches your actual key
+    console.log("EmailJS initialized"); // Add this to verify initialization
+</script>
+
+
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -255,39 +264,48 @@
                     <div class="signup-form animate-on-scroll">
                         <h3 class="mb-4 text-center">I'm an Aspiring Apprentice</h3>
                         <p class="text-center mb-4" style="color: var(--text-gray); font-size: 0.9rem;">Be the first to build your portfolio and connect with top employers. It's free, forever.</p>
-                        <form>
-                            <input type="text" class="form-control" placeholder="Full Name" required>
-                            <input type="email" class="form-control" placeholder="Email Address" required>
-                            <select class="form-select">
-                                <option value="">Desired Trade</option>
-                                <option value="electrician">Electrician</option>
-                                <option value="plumber">Plumber</option>
-                                <option value="carpenter">Carpenter</option>
-                                <option value="mechanic">Mechanic</option>
-                                <option value="bricklayer">Bricklayer</option>
-                                <option value="other">Other</option>
-                            </select>
-                            <button type="submit" class="signup-btn btn-apprentice">JOIN THE APPRENTICE LIST</button>
-                        </form>
+                        <form id="apprentice-form">
+    <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
+    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+    <select class="form-select" name="trade">
+        <option value="">Desired Trade</option>
+        <option value="electrician">Electrician</option>
+        <option value="plumber">Plumber</option>
+        <option value="carpenter">Carpenter</option>
+        <option value="mechanic">Mechanic</option>
+        <option value="bricklayer">Bricklayer</option>
+        <option value="other">Other</option>
+    </select>
+    <button type="submit" class="signup-btn btn-apprentice">JOIN THE APPRENTICE LIST</button>
+</form>
                     </div>
                 </div>
+
+
+<!-- form Success -->
+                <div id="form-success" class="alert alert-success" style="display:none;">
+    Thank you! Your application has been submitted successfully.
+</div>
+<!-- End Form Success -->
+
+
                 <div class="col-lg-4">
                     <div class="signup-form animate-on-scroll">
                         <h3 class="mb-4 text-center">I'm an Employer Hiring Apprentices</h3>
                         <p class="text-center mb-4" style="color: var(--text-gray); font-size: 0.9rem;">Get early access and a free 3-month trial of our premium hiring tools.</p>
-                        <form>
-                            <input type="text" class="form-control" placeholder="Company Name" required>
-                            <input type="email" class="form-control" placeholder="Work Email Address" required>
-                            <select class="form-select">
-                                <option value="">Trade You Hire For</option>
-                                <option value="electrician">Electrician</option>
-                                <option value="plumber">Plumber</option>
-                                <option value="construction">General Construction</option>
-                                <option value="multiple">Multiple Trades</option>
-                                <option value="other">Other</option>
-                            </select>
-                            <button type="submit" class="signup-btn btn-employer">JOIN THE EMPLOYER LIST</button>
-                        </form>
+                        <form id="employer-form">
+    <input type="text" name="company_name" class="form-control" placeholder="Company Name" required>
+    <input type="email" name="work_email" class="form-control" placeholder="Work Email Address" required>
+    <select class="form-select" name="hired_trade">
+        <option value="">Trade You Hire For</option>
+        <option value="electrician">Electrician</option>
+        <option value="plumber">Plumber</option>
+        <option value="construction">General Construction</option>
+        <option value="multiple">Multiple Trades</option>
+        <option value="other">Other</option>
+    </select>
+    <button type="submit" class="signup-btn btn-employer">JOIN THE EMPLOYER LIST</button>
+</form>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -375,7 +393,6 @@
             <p style="text-align: center; margin: 0;">&copy; 2024 GoSkillBridge Ltd. All Rights Reserved. | London, UK.</p>
         </div>
     </footer>
-
 
 
 

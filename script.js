@@ -167,3 +167,71 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+// EmailJS form submission 1
+document
+  .getElementById("apprentice-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log("Form submission triggered"); // Check if this appears in console
+
+    emailjs.sendForm("service_lyzqvuv", "template_a454beh", this).then(
+      function (response) {
+        // form success handler
+        document.getElementById("form-success").style.display = "block";
+        document.getElementById("apprentice-form").reset();
+        setTimeout(() => {
+          document.getElementById("form-success").style.display = "none";
+        }, 5000);
+
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Thank you! Your application has been submitted.");
+        this.reset(); // Reset the form
+      },
+      function (error) {
+        console.log("FAILED...", error);
+        alert("Oops! Something went wrong. Please try again.");
+      }
+    );
+  });
+
+/////////////////////////////////
+// Employer list Form Submission
+///////////////////////////////////
+document.addEventListener("DOMContentLoaded", function () {
+  const employerForm = document.getElementById("employer-form");
+
+  employerForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Show loading state
+    const submitBtn = this.querySelector(".btn-employer");
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.innerHTML = "Sending...";
+    submitBtn.disabled = true;
+
+    emailjs.sendForm("service_5brwwut", "template_28dbdah", this).then(
+      function (response) {
+        // Success handling
+        submitBtn.innerHTML = "Success!";
+        employerForm.reset();
+
+        // Optional: Show a success message
+        alert("Thank you for joining our employer list!");
+
+        // Reset button after 3 seconds
+        setTimeout(() => {
+          submitBtn.innerHTML = originalBtnText;
+          submitBtn.disabled = false;
+        }, 3000);
+      },
+      function (error) {
+        // Error handling
+        submitBtn.innerHTML = "Try Again";
+        submitBtn.disabled = false;
+        console.error("Email send failed:", error);
+        alert("Submission failed. Please try again.");
+      }
+    );
+  });
+});
